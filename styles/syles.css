@@ -1,0 +1,231 @@
+body {
+    font-family: "Google Sans", sans-serif;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: #4c5b66;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.contenedor_header {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    padding: 0 20px;
+}
+.logo img {
+    width: 200px;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 80px;
+    width: 50%;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    opacity: 0.8;
+}
+
+.container_inicio {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #4c5b66;
+    padding: 40px 0;
+}
+.texto_inicio {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.imagen_iphone {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen_iphone img {
+    width: 500px;
+}
+.texto_derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+.tituloBlanco {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 100%;
+}
+.texto_inicio .texto_blanco {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.texto_inicio .texto_gris {
+    margin-bottom: 30px;
+    color: #8c8c8c;
+}
+
+.botones_inicio {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.boton_request {
+    background-color: #3a8dde;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 300; 
+    margin-right: 15px;
+}
+
+.botones_inicio p {
+    color: #8c8c8c;
+    margin: 0 10px;
+    font-size: 16px;
+}
+.boton_recent_work {
+    display: flex; 
+    align-items: center;
+    color: white;
+    text-decoration: none; 
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.boton_recent_work img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.containerLogosEmpresa {
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 70px; 
+}
+.containerLogosEmpresa img {
+    max-width: 15%; 
+}
+
+.containerInformacionReadMore {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    gap: 30px; 
+}
+.engaging_interfaces, 
+.usableDesign, 
+.SolidDevelopement {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.imgEngaging img,
+.imgUsable img,
+.imgSolid img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.textoEngaging h2,
+.textoUsable h2,
+.textoSolid h2 {
+    color: #4c5b66;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.textoEngaging p,
+.textoUsable p,
+.textoSolid p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3a8dde;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.containerSelectProjects {
+    text-align: center; 
+    width: 90%;
+    padding: 80px 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.tituloSelect {
+    width: 90%;
+    text-align: left; 
+    margin-bottom: 40px;
+}
+
+.tituloSelect h2 {
+    color: #4c5b66;
+    font-size: 32px;
+    margin: 0;
+}
+
+.containerSelectProjectsImg {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.containerSelectProjectsImg img {
+    width: 25%; 
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
