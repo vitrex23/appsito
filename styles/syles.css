@@ -1,3 +1,9 @@
+/*
+|--------------------------------------------------------------------------
+| ESTILOS GLOBALES
+|--------------------------------------------------------------------------
+*/
+
 body {
     background-color: white;
     font-family: "Open Sans", sans-serif;
@@ -5,8 +11,35 @@ body {
     width: 100%;
 }
 
-/* ENCABEZADO Y NAVEGACIÓN */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+
+    font-weight: 100;
+    color: rgb(128, 142, 154);
+    margin: 0%;
+}
+
+hr {
+    /* Estilo del segundo código */
+    margin: 0px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| ENCABEZADO Y NAVEGACIÓN
+|--------------------------------------------------------------------------
+*/
+
 header {
+    /* Base: #4c5b66 del primer código */
     background: #4c5b66;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #fff;
@@ -17,6 +50,7 @@ header {
 }
 
 .contenedor-encabezado {
+    /* Estilo del primer código */
     align-items: center;
     display: flex;
     margin: 0 auto;
@@ -25,6 +59,7 @@ header {
 }
 
 .logotipo {
+    /* Estilo del primer código */
     align-items: center;
     display: flex;
     justify-content: flex-start;
@@ -33,10 +68,12 @@ header {
 }
 
 .logotipo img {
+    /* Estilo del primer código */
     width: 180px;
 }
 
 .nav-principal {
+    /* Estilo del primer código */
     align-items: center;
     display: flex;
     justify-content: flex-end;
@@ -47,6 +84,7 @@ header {
 }
 
 .nav-principal ul {
+    /* Estilo del primer código */
     display: flex;
     gap: 50px;
     list-style: none;
@@ -55,11 +93,35 @@ header {
 }
 
 .nav-principal a {
+    /* Estilo del primer código */
     color: white;
     text-decoration: none;
 }
 
-/* SECCIÓN PRINCIPAL (HERO) */
+/* Clases de navegación del segundo código (si se usan en el HTML) */
+.opcionMenuNavegacion {
+    background-color: #4c5b66; /* Color del header */
+    border: none;
+    color: #FFFFFF;
+    padding: 0px 30px;
+}
+
+.active {
+    /* Estilo para el enlace activo */
+    background-color: rgb(64, 72, 80);
+    box-shadow: 0 0 5px rgb(0, 0, 0) inset;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #FFFFFF;
+}
+
+/*
+|--------------------------------------------------------------------------
+| SECCIÓN PRINCIPAL (HERO)
+|--------------------------------------------------------------------------
+*/
+
 .seccion-principal {
     background-color: #4c5b66;
     margin: 0 auto;
@@ -75,18 +137,20 @@ header {
 }
 
 .imagen-celular {
+    /* Mantenemos las proporciones del primer código */
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 65%;
+    width: 45%; /* Original: 45% */
 }
 
 .imagen-celular img {
-    max-width: 500px;
+    max-width: 450px; /* Original: 450px */
     width: 100%;
 }
 
 .area-texto {
+    /* Mantenemos las proporciones del primer código */
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -96,8 +160,9 @@ header {
 }
 
 .titulo-grande {
+    /* Corresponde a .tituloPrincipal del segundo código */
     color: #ffffff;
-    font-size: 40px;
+    font-size: 40px; /* Segundo código usaba 55px */
     font-weight: 700;
     margin-bottom: 20px;
     width: 100%;
@@ -111,6 +176,7 @@ header {
 }
 
 .seccion-principal .texto-gris {
+    /* Corresponde a .textoGris del segundo código */
     color: #8c8c8c;
     font-size: 16px;
     line-height: 1.6;
@@ -118,13 +184,15 @@ header {
 }
 
 .botones-principal {
+    /* Corresponde a .botonesContenedor1 del segundo código */
     align-items: center;
     display: flex;
     margin-top: 20px;
 }
 
 .btn-cotizar {
-    background-color: #3a8dde;
+    /* Corresponde a .botonAzul del segundo código */
+    background-color: #3a8dde; /* Color del primer código */
     border-radius: 5px;
     color: white;
     font-weight: 600;
@@ -134,12 +202,14 @@ header {
 }
 
 .botones-principal p {
+    /* Corresponde a .or del segundo código */
     color: #8c8c8c;
     font-size: 16px;
     margin: 0 10px;
 }
 
 .btn-trabajo {
+    /* Corresponde a .botonSubrayado del segundo código */
     align-items: center;
     color: white;
     display: flex;
@@ -150,13 +220,20 @@ header {
 }
 
 .btn-trabajo img {
+    /* Corresponde a .botonSubrayadoImagen del segundo código */
     height: 16px;
     margin-right: 8px;
     width: 16px;
 }
 
-/* LOGOS SOCIOS */
+/*
+|--------------------------------------------------------------------------
+| LOGOS SOCIOS (Contenedor 2)
+|--------------------------------------------------------------------------
+*/
+
 .logos-socios {
+    /* Corresponde a .contenedor2 del segundo código, usando estilos del primero */
     align-items: center;
     background-color: #e4e4e4;
     display: flex;
@@ -171,8 +248,14 @@ header {
     opacity: 0.7;
 }
 
-/* TARJETAS DE INFORMACIÓN */
+/*
+|--------------------------------------------------------------------------
+| TARJETAS DE INFORMACIÓN (Contenedor 3)
+|--------------------------------------------------------------------------
+*/
+
 .lista-tarjetas-info {
+    /* Corresponde a .contenedor3 del segundo código, usando estilos del primero */
     display: flex;
     gap: 30px;
     justify-content: space-between;
@@ -181,6 +264,7 @@ header {
 }
 
 .tarjeta-info {
+    /* Corresponde a .tarjeta1, .tarjeta2, .tarjeta3 del segundo código */
     border: 1px solid #eee;
     border-radius: 4px;
     flex: 1;
@@ -195,12 +279,14 @@ header {
 }
 
 .texto-tarjeta h2 {
+    /* Corresponde a .tituloTarjetas del segundo código */
     color: #4c5b66;
     font-size: 24px;
     margin-bottom: 15px;
 }
 
 .texto-tarjeta p {
+    /* Corresponde a .parrafoTarjetas del segundo código */
     color: #555;
     font-size: 15px;
     line-height: 1.6;
@@ -216,14 +302,21 @@ button {
 }
 
 button a {
+    /* Estilo del botón "Read More" */
     color: #ffffff;
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
 }
 
-/* SECCIÓN PROYECTOS */
+/*
+|--------------------------------------------------------------------------
+| SECCIÓN PROYECTOS (Contenedor 4)
+|--------------------------------------------------------------------------
+*/
+
 .seccion-proyectos {
+    /* Corresponde a .contenedor4 del segundo código */
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -232,6 +325,7 @@ button a {
 }
 
 .proyectos-cabecera h2 {
+    /* Corresponde a .tituloContenedor4 del segundo código */
     align-items: center;
     color: #4c5b66;
     display: flex;
@@ -241,18 +335,21 @@ button a {
 }
 
 .proyectos-cabecera h2 img {
+    /* Corresponde a .shapes del segundo código */
     height: 24px;
     margin-right: 10px;
     width: 24px;
 }
 
 .galeria-proyectos {
+    /* Corresponde a .imgsContenedor4 del segundo código */
     display: flex;
     gap: 15px;
     justify-content: space-between;
 }
 
 .galeria-proyectos img {
+    /* Corresponde a .imgContenedor4 del segundo código */
     border-radius: 4px;
     max-width: 25%;
     width: 100%;
@@ -260,8 +357,14 @@ button a {
     object-fit: cover;
 }
 
-/* BLOG Y TWITTER */
+/*
+|--------------------------------------------------------------------------
+| BLOG Y TWITTER (Contenedor 5)
+|--------------------------------------------------------------------------
+*/
+
 .contenedor-blog-twitter {
+    /* Corresponde a .contenedor5 del segundo código */
     display: flex;
     justify-content: space-between;
     padding: 7%;
@@ -269,56 +372,8 @@ button a {
 
 .columna-blog,
 .columna-twitter {
+    /* Corresponde a .izqContenedor5 y .derContenedor5 del segundo código */
     width: 45%;
-}
-
-.entrada-blog {
-    display: flex;
-    padding: 3% 0%;
-}
-
-.img-blog {
-    padding: 2% 5% 2% 0%;
-    width: 25%;
-    height: 100px;
-    object-fit: cover;
-}
-
-.contenido-entrada {
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-}
-
-h3 {
-    color: rgb(128, 142, 154);
-    font-weight: 100;
-    margin: 0%;
-}
-
-.parrafos-contenido {
-    color: #a0a0a0;
-    line-height: 2;
-    margin: 0%;
-}
-
-.fechas-contenido {
-    color: #cfcfcf;
-    font-size: 14px;
-    margin: 0%;
-}
-
-.enlace-azul {
-    color: #289eff;
-}
-
-.usuario {
-    color: rgb(128, 142, 154);
-}
-
-.parrafos-twitter {
-    padding-bottom: 4%;
-    width: 75%;
 }
 
 .titulo-seccion {
@@ -339,16 +394,74 @@ h3 {
     margin: 0;
 }
 
-/* FOOTER */
+.entrada-blog {
+    /* Corresponde a .FOB01IzqContenedor5 y .FOB02IzqContenedor5 del segundo código */
+    display: flex;
+    padding: 3% 0%;
+}
+
+.img-blog {
+    /* Corresponde a .imgContenedor5 del segundo código */
+    padding: 2% 5% 2% 0%;
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.contenido-entrada {
+    /* Corresponde a .FOB01contenido del segundo código */
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.parrafos-contenido {
+    /* Corresponde a .parrafosContenedor5 del segundo código */
+    color: #a0a0a0;
+    line-height: 2;
+    margin: 0%;
+}
+
+.fechas-contenido {
+    /* Corresponde a .fechasContenedor5 del segundo código */
+    color: #cfcfcf;
+    font-size: 14px;
+    margin: 0%;
+}
+
+.enlace-azul {
+    /* Corresponde a .linkAzul del segundo código */
+    color: #289eff;
+}
+
+.usuario {
+    /* Corresponde a .user del segundo código */
+    color: rgb(128, 142, 154);
+}
+
+.parrafos-twitter {
+    /* Corresponde a .parrafosDerContenedor5 del segundo código */
+    padding-bottom: 4%;
+    width: 75%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| FOOTER
+|--------------------------------------------------------------------------
+*/
+
 footer {
     padding: 2% 7%;
 }
 
 .linea-footer {
+    /* Corresponde a .lineaFooter del segundo código */
     color: #a0a0a0;
 }
 
 .texto-redes {
+    /* Corresponde a .copyYRedes del segundo código */
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -360,15 +473,20 @@ footer {
 }
 
 
-/* MEDIA QUERIES */
+/*
+|--------------------------------------------------------------------------
+| MEDIA QUERIES
+|--------------------------------------------------------------------------
+*/
 
+/* --- Tabletas y Escritorios Pequeños (max-width: 992px) --- */
 @media (max-width: 992px) {
-    
+    /* Seccion Principal (Hero) */
     .contenido-principal {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .imagen-celular,
     .area-texto {
         width: 100%;
@@ -376,7 +494,7 @@ footer {
         text-align: center;
         align-items: center;
     }
-    
+
     .imagen-celular {
         margin-bottom: 30px;
     }
@@ -384,31 +502,38 @@ footer {
     .botones-principal {
         justify-content: center;
     }
-    
+
+    /* Logos Socios */
     .logos-socios {
         flex-wrap: wrap;
         gap: 20px;
         padding: 30px;
     }
-    
+
     .logos-socios img {
         max-width: 20%;
     }
-    
+
+    /* Tarjetas de Información */
     .lista-tarjetas-info {
         flex-direction: column;
         gap: 20px;
     }
 }
 
+/* --- Móviles y Tabletas Verticales (max-width: 768px) --- */
 @media (max-width: 768px) {
-    
     /* ENCABEZADO */
+    header {
+        flex-direction: column; /* Estilo del segundo código */
+        padding: 15px 0;
+    }
+
     .contenedor-encabezado {
         flex-direction: column;
         padding: 15px 0;
     }
-    
+
     .logotipo {
         width: 100%;
         justify-content: center;
@@ -427,12 +552,23 @@ footer {
         justify-content: center;
     }
 
+    /* SECCIÓN PRINCIPAL (HERO) - Sobrescribe 992px para móviles */
+    .titulo-grande {
+        font-size: 39px;
+        width: 100%;
+    }
+
+    /* Tarjetas de Información */
+    .lista-tarjetas-info {
+        display: block; /* Forzar el apilamiento total */
+    }
+
     /* PROYECTOS */
     .galeria-proyectos {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .galeria-proyectos img {
         max-width: 45%;
         height: 150px;
@@ -453,12 +589,14 @@ footer {
     }
     
     .entrada-blog {
+        /* Estilo del segundo código: apilamiento en blog */
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
     
     .img-blog {
+        /* Estilo del segundo código */
         width: 80%;
         height: auto;
         margin: 0 0 15px 0;
